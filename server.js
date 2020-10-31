@@ -75,7 +75,5 @@ app.get("/json", (req, res) => {
 });
 
 //Start our server so that it listens for HTTP requests!
-const listener = app.listen(3000, function () {
-	console.log("Your app is listening on port 3000");
-});
+const listener = app.listen(process.env.PORT || 3000);
 //process.env.PORT
